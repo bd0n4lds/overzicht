@@ -1,0 +1,1229 @@
+
+Openning EMV config file: C:\MCM\MCM_4_2_12\out\01352492_emv.cfg
+Read EMV config file: 681
+INFO: [emv_get_terminal_country_code] Terminal Country code: 124
+11:29:29.040 [9616]- CCi->doSAF: 0
+
+CCi->authOffLine: 0
+CCi->automaticClearSAF: 0
+CCi->QSPenable: 1
+CCi->RFIDFloorLimitEnable: 0
+CCi->swipe_retry: 3
+CCi->GiftCards.AddParams.IPAddress: https://staging
+CCi->GiftCards.AddParams.IPAddress_2: 
+11:29:29.041 [9616]- Terminal Counntry Code: 124
+
+***** Card Type Settings Start *****
+ 1      MASTERCARD [ 1 -  1 -  1]
+ 1            VISA [ 0 -  2 -  1]
+ 1            AMEX [ 2 -  3 -  1]
+ 1        DISCOVER [ 5 -  4 -  1]
+ 0        INSIGNIA [ 6 -  0 -  0]
+ 1  ENROUTE/DINERS [ 3 -  6 -  1]
+ 1             JCB [ 7 -  7 -  1]
+ 0   PRIVATE LABEL [ 8 -  0 -  0]
+ 0                 [-1 -  0 -  0]
+ 0                 [-1 -  0 -  0]
+ 0      VISA DEBIT [ 9 -  0 -  0]
+ 1   INTERAC DEBIT [ 4 - 12 -  1]
+****** Card Type Settings End ******
+11:29:29.043 [9616]- FDMS (Verifone PINPad) 4.2.12.18604 - 01/12/2016
+
+11:29:29.043 [9616]- Datawire access type: 1
+
+Openning EMV config file: C:\MCM\MCM_4_2_12\out\01352492_emv.cfg
+Read EMV config file: 681
+11:29:29.043 [9616]- Terminal Currency Code: 124
+
+CCi->E_Commerce: 0
+CCi->E_CommerceNash: -1
+CCm_Enable_PINPad: 1
+CCm_Enable_PINPad CCi size: 9724
+11:29:29.053 [9616]- CCm_Enable_PINPad HOSTID -> : 57
+TCP  *** ENABLED ***
+
+11:29:29.110 [9616]- Socket 1.1 initialization successful
+
+11:29:29.110 [9616]- Connecting to IP: 172.29.14.18 [port: 9001]
+
+11:29:29.110 [9616]- Setting SO_REUSEADDR option
+
+11:29:29.110 [9616]- Setting SO_REUSEADDR option Successful
+
+receive buffer size: 8192TCP  *** CONNECT ***
+
+PP_SockConnectToHost sc->cSocket: 920
+11:29:32.124 [9616]- pp_SetReset_IdlePrompt_XPI: 
+
+11:29:32.127 [9616]- DeletePINPADInfo, deleted
+
+11:29:32.128 [9616]- Enter pp_InitPINPadInfo
+
+11:29:32.128 [9616]- TransInfo->TerminalID: 01352492
+
+11:29:32.128 [9616]- ReadPINPadInfo, can't open file: C:\MCM\MCM_4_2_12\out\01352492_pinpad.cfg
+
+11:29:32.128 [9616]- ReadPINPadInfo returned res: 0
+
+11:29:32.129 [9616]- pp_Cancel_XPI start
+
+11:29:32.129 [9616]- pp_Cancel_XPI isSock: 1
+
+TCP  IN :<NUL><ACK><STX>S00<ETX>P:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:29:32.430 [9616]- send_mess_recv_ack returns: 0
+
+11:29:32.430 [9616]- pp_Cancel_XPI OK
+
+11:29:32.430 [9616]- pp_GetPINPadInfo
+
+TCP  IN :<NUL><ACK><STX>S95<ETX>\:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:29:32.732 [9616]- send_mess_recv_ack returns: 0
+
+11:29:32.732 [9616]- mx8xx recv response starts
+
+TCP OUT :<NUL>_:
+
+TCP OUT :<STX>00MX-XPI-****T    <FS>****.**t<FS>RFS***** ******************<>
+       <>       <FS>MX****** MX****** ***********<ETX><SO>:
+
+TCP  IN :<NUL><SOH><ACK>:
+
+11:29:32.834 [9616]- recv resp send ack returns: 95
+
+11:29:32.854 [9616]- Response String
+
+02  30  30  4D  58  2D  58  50  49  2D  35  32  30  30  54  20  ~00MX-XPI-5200T 
+20  20  20  1C  30  30  35  32  2E  30  30  74  1C  52  46  53     ~0052.00t~RFS
+30  30  31  39  30  20  30  30  30  32  37  30  30  30  30  32  00190 0002700002
+36  30  34  35  34  32  36  34  20  20  20  20  20  20  20  1C  60454264       ~
+4D  58  32  30  30  30  30  31  20  4D  58  32  30  30  30  30  MX200001 MX20000
+31  20  30  30  30  30  30  30  30  30  30  30  30  03  0E      1 00000000000~~
+
+
+11:29:32.857 [9616]- pp_GetPINPadInfo succeed
+
+11:29:32.859 [9616]- WritePINPadInfo, return 1
+
+11:29:32.859 [9616]- pp_InitPINPadInfo succeed
+
+11:29:32.859 [9616]- Not Vx PINPAD
+
+11:29:32.859 [9616]- Enter IsFormAgentXPI
+
+11:29:32.860 [9616]- Enter pp_InitPINPadInfo
+
+11:29:32.860 [9616]- TransInfo->TerminalID: 01352492
+
+11:29:32.860 [9616]- ReadPINPadInfo, return 1
+
+11:29:32.861 [9616]- pp_InitPINPadInfo succeed
+
+11:29:32.861 [9616]- pp_Initialize_Idle_Prompt_XPI start
+
+11:29:32.861 [9616]- PINPAD Mode 0:No Contactless. PinPad only accepts Swipe or Insert
+
+11:29:32.862 [9616]- Enter IsFormAgentXPI
+
+11:29:32.862 [9616]- Enter pp_InitPINPadInfo
+
+11:29:32.863 [9616]- TransInfo->TerminalID: 01352492
+
+11:29:32.863 [9616]- ReadPINPadInfo, return 1
+
+11:29:32.864 [9616]- pp_InitPINPadInfo succeed
+
+11:29:32.864 [9616]- pp_Display_String_XPI start
+
+11:29:32.864 [9616]-  Line1: 
+
+11:29:32.864 [9616]-  Line2: 
+
+TCP  IN :<NUL>'<STX>S14                <FS>                <ETX>I:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:29:33.166 [9616]- send_mess_recv_ack returns: 0
+
+11:29:33.166 [9616]- pp_Display_String_XPI return: 1
+
+11:29:33.166 [9616]- pp_Turn_On_Off_XPI start
+
+11:29:33.167 [9616]- pp_Turn_On_Off_XPI isSock: 1
+
+11:29:33.167 [9616]- Turn Off XPI
+
+TCP  IN :<NUL><BS><STX>XPI<FS>0<ETX>n:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:29:33.467 [9616]- send_mess_recv_ack returns: 0
+
+11:29:33.468 [9616]- pp Turn On Off XPI OK
+
+11:29:33.468 [9616]- pp_mx8xx_Display_Idle_Advert start
+
+11:29:33.468 [9616]- InitForm start
+
+TCP  IN :<NUL><ETB><STX>XIFM<FS>ADVERTISEMENT<FS>1<ETX>u:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:29:33.771 [9616]- send_mess_recv_ack returns: 0
+
+11:29:33.771 [9616]- mx8xx recv response starts
+
+TCP OUT :<NUL><HT>:
+
+TCP OUT :<STX>XIFM<FS>1<ETX>4:
+
+TCP  IN :<NUL><SOH><ACK>:
+
+11:29:33.972 [9616]- recv resp send ack returns: 9
+
+11:29:33.973 [9616]- InitForm recv return res : 9
+
+TCP  IN :<NUL>*<STX>XSPV<FS>2<FS>CAPTION<FS>STRING<FS>WELCOME / BONJOUR<>
+       <><ETX>S:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:29:34.277 [9616]- send_mess_recv_ack returns: 0
+
+11:29:34.277 [9616]- mx8xx recv response starts
+
+TCP OUT :<NUL><HT>:
+
+TCP OUT :<STX>XSPV<FS>1<ETX>#:
+
+TCP  IN :<NUL><SOH><ACK>:
+
+11:29:34.478 [9616]- recv resp send ack returns: 9
+
+11:29:34.479 [9616]- ShowForm start
+
+TCP  IN :<NUL><BEL><STX>XSFM<ETX><ETX>:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:29:34.780 [9616]- send_mess_recv_ack returns: 0
+
+11:29:34.781 [9616]- mx8xx recv response starts
+
+TCP OUT :<NUL><HT>:
+
+TCP OUT :<STX>XSFM<FS>1<ETX>.:
+
+TCP  IN :<NUL><SOH><ACK>:
+
+11:29:34.882 [9616]- recv resp send ack returns: 9
+
+11:29:34.883 [9616]- ShowForm recv return res : 9
+
+11:29:34.883 [9616]- pp_mx8xx_Display_Idle_Advert OK
+
+11:29:34.883 [9616]- pp_SetReset_IdlePrompt_XPI return: 1
+
+11:29:34.884 [9616]- FDMS_Enabled_PINPad return: 0
+
+Openning EMV config file: C:\MCM\MCM_4_2_12\out\01352492_emv.cfg
+Read EMV config file: 681
+INFO: [emv_get_terminal_country_code] Terminal Country code: 124
+11:30:12.183 [6352]- CCi->doSAF: 0
+
+CCi->authOffLine: 0
+CCi->automaticClearSAF: 0
+CCi->QSPenable: 1
+CCi->RFIDFloorLimitEnable: 0
+CCi->swipe_retry: 3
+CCi->GiftCards.AddParams.IPAddress: https://staging
+CCi->GiftCards.AddParams.IPAddress_2: 
+11:30:12.185 [6352]- Terminal Counntry Code: 124
+
+***** Card Type Settings Start *****
+ 1      MASTERCARD [ 1 -  1 -  1]
+ 1            VISA [ 0 -  2 -  1]
+ 1            AMEX [ 2 -  3 -  1]
+ 1        DISCOVER [ 5 -  4 -  1]
+ 0        INSIGNIA [ 6 -  0 -  0]
+ 1  ENROUTE/DINERS [ 3 -  6 -  1]
+ 1             JCB [ 7 -  7 -  1]
+ 0   PRIVATE LABEL [ 8 -  0 -  0]
+ 0                 [-1 -  0 -  0]
+ 0                 [-1 -  0 -  0]
+ 0      VISA DEBIT [ 9 -  0 -  0]
+ 1   INTERAC DEBIT [ 4 - 12 -  1]
+****** Card Type Settings End ******
+11:30:12.189 [6352]- FDMS (Verifone PINPad) 4.2.12.18604 - 01/12/2016
+
+11:30:12.189 [6352]- Datawire access type: 1
+
+Openning EMV config file: C:\MCM\MCM_4_2_12\out\01352492_emv.cfg
+Read EMV config file: 681
+11:30:12.190 [6352]- Terminal Currency Code: 124
+
+CCi->E_Commerce: 0
+CCi->E_CommerceNash: -1
+11:30:12.217 [6352]- pp_Get_Card_Type_XPI start
+
+TCP  IN :<NUL>,<STX>S13PLEASE SELECT<FS>CARD TYPE<FS>CREDIT<FS>DEBIT<FS><>
+       <><FS><ETX><ETB>:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:30:12.517 [6352]- send_mess_recv_ack returns: 0
+
+11:30:12.517 [6352]- mx8xx recv response starts
+
+11:30:57.522 [6352]- recv resp send ack returns: -21
+
+11:30:57.522 [6352]- recv resp send ack returns timeout: 45
+
+11:30:57.523 [6352]- recv_resp_send_ack returns: -21
+
+11:30:57.523 [6352]- Controller timed out: 45
+
+11:30:57.524 [6352]- pp_Display_String_XPI start
+
+11:30:57.524 [6352]-  Line1: TRANS. CANCELLED
+
+11:30:57.528 [6352]-  Line2: TRANS. ANNULÉ
+
+TCP  IN :<NUL>$<STX>S14TRANS. CANCELLED<FS>TRANS. ANNUL<C9><ETX><93>:
+
+11:31:02.733 [6352]- send_mess_recv_ack returns: -21
+
+11:31:02.733 [6352]- pp_Display_String_XPI return: -21
+
+11:31:03.235 [6352]- PPGetCardType ret value : -13
+
+11:31:03.236 [6352]- pp_Initialize_Idle_Prompt_XPI start
+
+11:31:03.237 [6352]- PINPAD Mode 2:EMV/MSD Contactless. PinPad accepts Swipe, Insert and EMV/MSD Contactless.
+
+11:31:03.237 [6352]- Enter IsFormAgentXPI
+
+11:31:03.237 [6352]- Enter pp_InitPINPadInfo
+
+11:31:03.237 [6352]- TransInfo->TerminalID: 01352492
+
+11:31:03.238 [6352]- ReadPINPadInfo, return 1
+
+11:31:03.238 [6352]- pp_InitPINPadInfo succeed
+
+11:31:03.238 [6352]- pp_Display_String_XPI start
+
+11:31:03.239 [6352]-  Line1: 
+
+11:31:03.239 [6352]-  Line2: 
+
+TCP  IN :<NUL>'<STX>S14                <FS>                <ETX>I:
+
+11:31:08.539 [6352]- send_mess_recv_ack returns: -21
+
+11:31:08.539 [6352]- pp_Display_String_XPI return: -21
+
+11:31:08.540 [6352]- pp_Turn_On_Off_XPI start
+
+11:31:08.540 [6352]- pp_Turn_On_Off_XPI isSock: 1
+
+11:31:08.540 [6352]- Turn Off XPI
+
+TCP  IN :<NUL><BS><STX>XPI<FS>0<ETX>n:
+
+11:31:13.845 [6352]- send_mess_recv_ack returns: -21
+
+11:31:13.845 [6352]- pp Turn On Off XPI Error
+
+11:31:13.846 [6352]- pp_mx8xx_Display_Idle_Advert start
+
+11:31:13.846 [6352]- InitForm start
+
+TCP  IN :<NUL><ETB><STX>XIFM<FS>ADVERTISEMENT<FS>1<ETX>u:
+
+Enter PP_SockDisconnectHost sc->cSocket: 920TCP  *** HANGUP ***
+
+Exit PP_SockDisconnectHost sc->cSocket: -1
+11:31:19.149 [6352]- Connecting to IP: 172.29.14.18 [port: 9001]
+
+11:31:19.149 [6352]- Setting SO_REUSEADDR option
+
+11:31:19.150 [6352]- Setting SO_REUSEADDR option Successful
+
+The attempt to connect timed-out
+11:31:40.149 [6352]- send_mess_recv_ack returns: -5
+
+11:31:40.150 [6352]- InitForm send return res : -5
+
+11:31:40.150 [6352]- pp_mx8xx_Display_Idle_Advert return res : -5
+
+11:31:40.150 [6352]- Card Type selection cancelled by cardholder
+
+11:31:40.150 [6352]- cdca_m ... authorize_cd cardtype: 0
+
+11:31:40.150 [6352]- cdca_m ... authorize_cd ExpDAte: ****
+
+11:31:40.150 [6352]- cdca_m ... authorize_cd host id: 57
+
+struct ccauth_in_ex: 9724
+struct CDCAResult: 2200
+struct CCGiftResult: 14009
+TCDCAInput: 2200
+struct CDCATotalResult: 10420
+CCTAGtype: 9821
+Openning EMV config file: C:\MCM\MCM_4_2_12\out\01352492_emv.cfg
+Read EMV config file: 681
+INFO: [emv_get_terminal_country_code] Terminal Country code: 124
+11:31:40.195 [6352]- CCi->doSAF: 0
+
+CCi->authOffLine: 0
+CCi->automaticClearSAF: 0
+CCi->QSPenable: 1
+CCi->RFIDFloorLimitEnable: 0
+CCi->swipe_retry: 3
+CCi->GiftCards.AddParams.IPAddress: https://staging
+CCi->GiftCards.AddParams.IPAddress_2: 
+11:31:40.198 [6352]- Terminal Counntry Code: 124
+
+***** Card Type Settings Start *****
+ 1      MASTERCARD [ 1 -  1 -  1]
+ 1            VISA [ 0 -  2 -  1]
+ 1            AMEX [ 2 -  3 -  1]
+ 1        DISCOVER [ 5 -  4 -  1]
+ 0        INSIGNIA [ 6 -  0 -  0]
+ 1  ENROUTE/DINERS [ 3 -  6 -  1]
+ 1             JCB [ 7 -  7 -  1]
+ 0   PRIVATE LABEL [ 8 -  0 -  0]
+ 0                 [-1 -  0 -  0]
+ 0                 [-1 -  0 -  0]
+ 0      VISA DEBIT [ 9 -  0 -  0]
+ 1   INTERAC DEBIT [ 4 - 12 -  1]
+****** Card Type Settings End ******
+11:31:40.204 [6352]- FDMS (Verifone PINPad) 4.2.12.18604 - 01/12/2016
+
+11:31:40.205 [6352]- Datawire access type: 1
+
+Openning EMV config file: C:\MCM\MCM_4_2_12\out\01352492_emv.cfg
+Read EMV config file: 681
+11:31:40.206 [6352]- Terminal Currency Code: 124
+
+CCi->E_Commerce: 0
+CCi->E_CommerceNash: -1
+CCm_Enable_PINPad: 1
+CCm_Enable_PINPad CCi size: 9724
+11:31:40.208 [6352]- CCm_Enable_PINPad HOSTID -> : 57
+
+11:31:40.208 [6352]- Connecting to IP: 172.29.14.18 [port: 9001]
+
+11:31:40.209 [6352]- Setting SO_REUSEADDR option
+
+11:31:40.209 [6352]- Setting SO_REUSEADDR option Successful
+
+The attempt to connect timed-out
+11:32:01.215 [6352]- FDMS_Enabled_PINPad return: -3
+
+Openning EMV config file: C:\MCM\MCM_4_2_12\out\01352492_emv.cfg
+Read EMV config file: 681
+INFO: [emv_get_terminal_country_code] Terminal Country code: 124
+11:32:16.345 [7596]- CCi->doSAF: 0
+
+CCi->authOffLine: 0
+CCi->automaticClearSAF: 0
+CCi->QSPenable: 1
+CCi->RFIDFloorLimitEnable: 0
+CCi->swipe_retry: 3
+CCi->GiftCards.AddParams.IPAddress: https://staging
+CCi->GiftCards.AddParams.IPAddress_2: 
+11:32:16.347 [7596]- Terminal Counntry Code: 124
+
+***** Card Type Settings Start *****
+ 1      MASTERCARD [ 1 -  1 -  1]
+ 1            VISA [ 0 -  2 -  1]
+ 1            AMEX [ 2 -  3 -  1]
+ 1        DISCOVER [ 5 -  4 -  1]
+ 0        INSIGNIA [ 6 -  0 -  0]
+ 1  ENROUTE/DINERS [ 3 -  6 -  1]
+ 1             JCB [ 7 -  7 -  1]
+ 0   PRIVATE LABEL [ 8 -  0 -  0]
+ 0                 [-1 -  0 -  0]
+ 0                 [-1 -  0 -  0]
+ 0      VISA DEBIT [ 9 -  0 -  0]
+ 1   INTERAC DEBIT [ 4 - 12 -  1]
+****** Card Type Settings End ******
+11:32:16.350 [7596]- FDMS (Verifone PINPad) 4.2.12.18604 - 01/12/2016
+
+11:32:16.351 [7596]- Datawire access type: 1
+
+Openning EMV config file: C:\MCM\MCM_4_2_12\out\01352492_emv.cfg
+Read EMV config file: 681
+11:32:16.351 [7596]- Terminal Currency Code: 124
+
+CCi->E_Commerce: 0
+CCi->E_CommerceNash: -1
+CCm_Enable_PINPad: 1
+CCm_Enable_PINPad CCi size: 9724
+11:32:16.353 [7596]- CCm_Enable_PINPad HOSTID -> : 57
+
+11:32:16.353 [7596]- Connecting to IP: 172.29.14.18 [port: 9001]
+
+11:32:16.353 [7596]- Setting SO_REUSEADDR option
+
+11:32:16.353 [7596]- Setting SO_REUSEADDR option Successful
+
+The attempt to connect timed-out
+11:32:37.358 [7596]- FDMS_Enabled_PINPad return: -3
+
+11:32:37.361 [7596]- pp_Get_Card_Type_XPI start
+
+TCP  IN :<NUL>,<STX>S13PLEASE SELECT<FS>CARD TYPE<FS>CREDIT<FS>DEBIT<FS><>
+       <><FS><ETX><ETB>:
+
+The descriptor is not a socket
+Enter PP_SockDisconnectHost sc->cSocket: -1
+11:32:37.662 [7596]- Connecting to IP: 172.29.14.18 [port: 9001]
+
+11:32:37.662 [7596]- Setting SO_REUSEADDR option
+
+11:32:37.662 [7596]- Setting SO_REUSEADDR option Successful
+
+The attempt to connect timed-out
+11:32:58.661 [7596]- send_mess_recv_ack returns: -5
+
+11:32:58.662 [7596]- PPGetCardType ret value : 0
+
+11:32:58.663 [7596]- pp_Initialize_Idle_Prompt_XPI start
+
+11:32:58.663 [7596]- PINPAD Mode 2:EMV/MSD Contactless. PinPad accepts Swipe, Insert and EMV/MSD Contactless.
+
+11:32:58.663 [7596]- Enter IsFormAgentXPI
+
+11:32:58.663 [7596]- Enter pp_InitPINPadInfo
+
+11:32:58.664 [7596]- TransInfo->TerminalID: 01352492
+
+11:32:58.664 [7596]- ReadPINPadInfo, return 1
+
+11:32:58.664 [7596]- pp_InitPINPadInfo succeed
+
+11:32:58.665 [7596]- pp_Display_String_XPI start
+
+11:32:58.665 [7596]-  Line1: 
+
+11:32:58.665 [7596]-  Line2: 
+
+TCP  IN :<NUL>'<STX>S14                <FS>                <ETX>I:
+
+The descriptor is not a socket
+Enter PP_SockDisconnectHost sc->cSocket: -1
+11:32:58.968 [7596]- Connecting to IP: 172.29.14.18 [port: 9001]
+
+11:32:58.969 [7596]- Setting SO_REUSEADDR option
+
+11:32:58.969 [7596]- Setting SO_REUSEADDR option Successful
+
+The attempt to connect timed-out
+11:33:19.973 [7596]- send_mess_recv_ack returns: -5
+
+11:33:19.973 [7596]- pp_Display_String_XPI return: -5
+
+11:33:19.973 [7596]- pp_Turn_On_Off_XPI start
+
+11:33:19.974 [7596]- pp_Turn_On_Off_XPI isSock: 1
+
+11:33:19.974 [7596]- Turn Off XPI
+
+TCP  IN :<NUL><BS><STX>XPI<FS>0<ETX>n:
+
+The descriptor is not a socket
+Enter PP_SockDisconnectHost sc->cSocket: -1
+11:33:20.275 [7596]- Connecting to IP: 172.29.14.18 [port: 9001]
+
+11:33:20.275 [7596]- Setting SO_REUSEADDR option
+
+11:33:20.276 [7596]- Setting SO_REUSEADDR option Successful
+
+The attempt to connect timed-out
+11:33:41.287 [7596]- send_mess_recv_ack returns: -5
+
+11:33:41.287 [7596]- pp Turn On Off XPI Error
+
+11:33:41.287 [7596]- pp_mx8xx_Display_Idle_Advert start
+
+11:33:41.288 [7596]- InitForm start
+
+TCP  IN :<NUL><ETB><STX>XIFM<FS>ADVERTISEMENT<FS>1<ETX>u:
+
+The descriptor is not a socket
+Enter PP_SockDisconnectHost sc->cSocket: -1
+11:33:41.590 [7596]- Connecting to IP: 172.29.14.18 [port: 9001]
+
+11:33:41.590 [7596]- Setting SO_REUSEADDR option
+
+11:33:41.591 [7596]- Setting SO_REUSEADDR option Successful
+
+The attempt to connect timed-out
+11:34:02.600 [7596]- send_mess_recv_ack returns: -5
+
+11:34:02.600 [7596]- InitForm send return res : -5
+
+11:34:02.600 [7596]- pp_mx8xx_Display_Idle_Advert return res : -5
+
+11:34:02.601 [7596]- Card Type selection cancelled by cardholder
+
+11:34:02.601 [7596]- cdca_m ... authorize_cd cardtype: 0
+
+11:34:02.601 [7596]- cdca_m ... authorize_cd ExpDAte: ****
+
+11:34:02.601 [7596]- cdca_m ... authorize_cd host id: 57
+
+struct ccauth_in_ex: 9724
+struct CDCAResult: 2200
+struct CCGiftResult: 14009
+TCDCAInput: 2200
+struct CDCATotalResult: 10420
+CCTAGtype: 9821
+Openning EMV config file: C:\MCM\MCM_4_2_12\out\01352492_emv.cfg
+Read EMV config file: 681
+INFO: [emv_get_terminal_country_code] Terminal Country code: 124
+11:34:02.606 [7596]- CCi->doSAF: 0
+
+CCi->authOffLine: 0
+CCi->automaticClearSAF: 0
+CCi->QSPenable: 1
+CCi->RFIDFloorLimitEnable: 0
+CCi->swipe_retry: 3
+CCi->GiftCards.AddParams.IPAddress: https://staging
+CCi->GiftCards.AddParams.IPAddress_2: 
+11:34:02.608 [7596]- Terminal Counntry Code: 124
+
+***** Card Type Settings Start *****
+ 1      MASTERCARD [ 1 -  1 -  1]
+ 1            VISA [ 0 -  2 -  1]
+ 1            AMEX [ 2 -  3 -  1]
+ 1        DISCOVER [ 5 -  4 -  1]
+ 0        INSIGNIA [ 6 -  0 -  0]
+ 1  ENROUTE/DINERS [ 3 -  6 -  1]
+ 1             JCB [ 7 -  7 -  1]
+ 0   PRIVATE LABEL [ 8 -  0 -  0]
+ 0                 [-1 -  0 -  0]
+ 0                 [-1 -  0 -  0]
+ 0      VISA DEBIT [ 9 -  0 -  0]
+ 1   INTERAC DEBIT [ 4 - 12 -  1]
+****** Card Type Settings End ******
+11:34:02.611 [7596]- FDMS (Verifone PINPad) 4.2.12.18604 - 01/12/2016
+
+11:34:02.611 [7596]- Datawire access type: 1
+
+Openning EMV config file: C:\MCM\MCM_4_2_12\out\01352492_emv.cfg
+Read EMV config file: 681
+11:34:02.612 [7596]- Terminal Currency Code: 124
+
+CCi->E_Commerce: 0
+CCi->E_CommerceNash: -1
+CCm_Enable_PINPad: 1
+CCm_Enable_PINPad CCi size: 9724
+11:34:02.613 [7596]- CCm_Enable_PINPad HOSTID -> : 57
+
+11:34:02.613 [7596]- Connecting to IP: 172.29.14.18 [port: 9001]
+
+11:34:02.614 [7596]- Setting SO_REUSEADDR option
+
+11:34:02.614 [7596]- Setting SO_REUSEADDR option Successful
+
+The attempt to connect timed-out
+11:34:23.617 [7596]- FDMS_Enabled_PINPad return: -3
+
+Openning EMV config file: C:\MCM\MCM_4_2_12\out\01352492_emv.cfg
+Read EMV config file: 681
+INFO: [emv_get_terminal_country_code] Terminal Country code: 124
+11:34:40.451 [10076]- CCi->doSAF: 0
+
+CCi->authOffLine: 0
+CCi->automaticClearSAF: 0
+CCi->QSPenable: 1
+CCi->RFIDFloorLimitEnable: 0
+CCi->swipe_retry: 3
+CCi->GiftCards.AddParams.IPAddress: https://staging
+CCi->GiftCards.AddParams.IPAddress_2: 
+11:34:40.454 [10076]- Terminal Counntry Code: 124
+
+***** Card Type Settings Start *****
+ 1      MASTERCARD [ 1 -  1 -  1]
+ 1            VISA [ 0 -  2 -  1]
+ 1            AMEX [ 2 -  3 -  1]
+ 1        DISCOVER [ 5 -  4 -  1]
+ 0        INSIGNIA [ 6 -  0 -  0]
+ 1  ENROUTE/DINERS [ 3 -  6 -  1]
+ 1             JCB [ 7 -  7 -  1]
+ 0   PRIVATE LABEL [ 8 -  0 -  0]
+ 0                 [-1 -  0 -  0]
+ 0                 [-1 -  0 -  0]
+ 0      VISA DEBIT [ 9 -  0 -  0]
+ 1   INTERAC DEBIT [ 4 - 12 -  1]
+****** Card Type Settings End ******
+11:34:40.460 [10076]- FDMS (Verifone PINPad) 4.2.12.18604 - 01/12/2016
+
+11:34:40.461 [10076]- Datawire access type: 1
+
+Openning EMV config file: C:\MCM\MCM_4_2_12\out\01352492_emv.cfg
+Read EMV config file: 681
+11:34:40.462 [10076]- Terminal Currency Code: 124
+
+CCi->E_Commerce: 0
+CCi->E_CommerceNash: -1
+CCm_Enable_PINPad: 1
+CCm_Enable_PINPad CCi size: 9724
+11:34:40.465 [10076]- CCm_Enable_PINPad HOSTID -> : 57
+
+11:34:40.465 [10076]- Connecting to IP: 172.29.14.18 [port: 9001]
+
+11:34:40.465 [10076]- Setting SO_REUSEADDR option
+
+11:34:40.466 [10076]- Setting SO_REUSEADDR option Successful
+
+receive buffer size: 8192TCP  *** CONNECT ***
+
+PP_SockConnectToHost sc->cSocket: 900
+11:34:41.462 [10076]- pp_SetReset_IdlePrompt_XPI: 
+
+11:34:41.463 [10076]- DeletePINPADInfo, deleted
+
+11:34:41.463 [10076]- Enter pp_InitPINPadInfo
+
+11:34:41.463 [10076]- TransInfo->TerminalID: 01352492
+
+11:34:41.463 [10076]- ReadPINPadInfo, can't open file: C:\MCM\MCM_4_2_12\out\01352492_pinpad.cfg
+
+11:34:41.464 [10076]- ReadPINPadInfo returned res: 0
+
+11:34:41.464 [10076]- pp_Cancel_XPI start
+
+11:34:41.464 [10076]- pp_Cancel_XPI isSock: 1
+
+TCP  IN :<NUL><ACK><STX>S00<ETX>P:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:34:41.766 [10076]- send_mess_recv_ack returns: 0
+
+11:34:41.767 [10076]- pp_Cancel_XPI OK
+
+11:34:41.767 [10076]- pp_GetPINPadInfo
+
+TCP  IN :<NUL><ACK><STX>S95<ETX>\:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:34:42.070 [10076]- send_mess_recv_ack returns: 0
+
+11:34:42.071 [10076]- mx8xx recv response starts
+
+TCP OUT :<NUL>_:
+
+TCP OUT :<STX>00MX-XPI-****T    <FS>****.**t<FS>RFS***** ******************<>
+       <>       <FS>MX****** MX****** ***********<ETX><SO>:
+
+TCP  IN :<NUL><SOH><ACK>:
+
+11:34:42.172 [10076]- recv resp send ack returns: 95
+
+11:34:42.173 [10076]- Response String
+
+02  30  30  4D  58  2D  58  50  49  2D  35  32  30  30  54  20  ~00MX-XPI-5200T 
+20  20  20  1C  30  30  35  32  2E  30  30  74  1C  52  46  53     ~0052.00t~RFS
+30  30  31  39  30  20  30  30  30  32  37  30  30  30  30  32  00190 0002700002
+36  30  34  35  34  32  36  34  20  20  20  20  20  20  20  1C  60454264       ~
+4D  58  32  30  30  30  30  31  20  4D  58  32  30  30  30  30  MX200001 MX20000
+31  20  30  30  30  30  30  30  30  30  30  30  30  03  0E      1 00000000000~~
+
+
+11:34:42.175 [10076]- pp_GetPINPadInfo succeed
+
+11:34:42.177 [10076]- WritePINPadInfo, return 1
+
+11:34:42.177 [10076]- pp_InitPINPadInfo succeed
+
+11:34:42.177 [10076]- Not Vx PINPAD
+
+11:34:42.178 [10076]- Enter IsFormAgentXPI
+
+11:34:42.178 [10076]- Enter pp_InitPINPadInfo
+
+11:34:42.178 [10076]- TransInfo->TerminalID: 01352492
+
+11:34:42.178 [10076]- ReadPINPadInfo, return 1
+
+11:34:42.179 [10076]- pp_InitPINPadInfo succeed
+
+11:34:42.179 [10076]- pp_Initialize_Idle_Prompt_XPI start
+
+11:34:42.179 [10076]- PINPAD Mode 0:No Contactless. PinPad only accepts Swipe or Insert
+
+11:34:42.179 [10076]- Enter IsFormAgentXPI
+
+11:34:42.180 [10076]- Enter pp_InitPINPadInfo
+
+11:34:42.180 [10076]- TransInfo->TerminalID: 01352492
+
+11:34:42.180 [10076]- ReadPINPadInfo, return 1
+
+11:34:42.181 [10076]- pp_InitPINPadInfo succeed
+
+11:34:42.181 [10076]- pp_Display_String_XPI start
+
+11:34:42.181 [10076]-  Line1: 
+
+11:34:42.181 [10076]-  Line2: 
+
+TCP  IN :<NUL>'<STX>S14                <FS>                <ETX>I:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:34:42.484 [10076]- send_mess_recv_ack returns: 0
+
+11:34:42.484 [10076]- pp_Display_String_XPI return: 1
+
+11:34:42.485 [10076]- pp_Turn_On_Off_XPI start
+
+11:34:42.485 [10076]- pp_Turn_On_Off_XPI isSock: 1
+
+11:34:42.486 [10076]- Turn Off XPI
+
+TCP  IN :<NUL><BS><STX>XPI<FS>0<ETX>n:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:34:42.790 [10076]- send_mess_recv_ack returns: 0
+
+11:34:42.790 [10076]- pp Turn On Off XPI OK
+
+11:34:42.791 [10076]- pp_mx8xx_Display_Idle_Advert start
+
+11:34:42.791 [10076]- InitForm start
+
+TCP  IN :<NUL><ETB><STX>XIFM<FS>ADVERTISEMENT<FS>1<ETX>u:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:34:43.093 [10076]- send_mess_recv_ack returns: 0
+
+11:34:43.093 [10076]- mx8xx recv response starts
+
+TCP OUT :<NUL><HT>:
+
+TCP OUT :<STX>XIFM<FS>1<ETX>4:
+
+TCP  IN :<NUL><SOH><ACK>:
+
+11:34:43.293 [10076]- recv resp send ack returns: 9
+
+11:34:43.294 [10076]- InitForm recv return res : 9
+
+TCP  IN :<NUL>*<STX>XSPV<FS>2<FS>CAPTION<FS>STRING<FS>WELCOME / BONJOUR<>
+       <><ETX>S:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:34:43.594 [10076]- send_mess_recv_ack returns: 0
+
+11:34:43.594 [10076]- mx8xx recv response starts
+
+TCP OUT :<NUL><HT>:
+
+TCP OUT :<STX>XSPV<FS>1<ETX>#:
+
+TCP  IN :<NUL><SOH><ACK>:
+
+11:34:43.794 [10076]- recv resp send ack returns: 9
+
+11:34:43.795 [10076]- ShowForm start
+
+TCP  IN :<NUL><BEL><STX>XSFM<ETX><ETX>:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:34:44.095 [10076]- send_mess_recv_ack returns: 0
+
+11:34:44.096 [10076]- mx8xx recv response starts
+
+TCP OUT :<NUL><HT>:
+
+TCP OUT :<STX>XSFM<FS>1<ETX>.:
+
+TCP  IN :<NUL><SOH><ACK>:
+
+11:34:44.297 [10076]- recv resp send ack returns: 9
+
+11:34:44.298 [10076]- ShowForm recv return res : 9
+
+11:34:44.298 [10076]- pp_mx8xx_Display_Idle_Advert OK
+
+11:34:44.298 [10076]- pp_SetReset_IdlePrompt_XPI return: 1
+
+11:34:44.299 [10076]- FDMS_Enabled_PINPad return: 0
+
+11:34:44.302 [10076]- pp_Get_Card_Type_XPI start
+
+TCP  IN :<NUL>,<STX>S13PLEASE SELECT<FS>CARD TYPE<FS>CREDIT<FS>DEBIT<FS><>
+       <><FS><ETX><ETB>:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:34:44.604 [10076]- send_mess_recv_ack returns: 0
+
+11:34:44.604 [10076]- mx8xx recv response starts
+
+TCP OUT :<NUL><ENQ>:
+
+TCP OUT :<STX>02<ETX><SOH>:
+
+TCP  IN :<NUL><SOH><ACK>:
+
+11:35:18.310 [10076]- recv resp send ack returns: 5
+
+11:35:18.312 [10076]- pp_Display_String_XPI start
+
+11:35:18.316 [10076]-  Line1: TRANS. CANCELLED
+
+11:35:18.319 [10076]-  Line2: TRANS. ANNULÉ
+
+TCP  IN :<NUL>$<STX>S14TRANS. CANCELLED<FS>TRANS. ANNUL<C9><ETX><93>:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:35:18.621 [10076]- send_mess_recv_ack returns: 0
+
+11:35:18.621 [10076]- pp_Display_String_XPI return: 1
+
+11:35:19.122 [10076]- PPGetCardType ret value : -13
+
+11:35:19.124 [10076]- pp_Initialize_Idle_Prompt_XPI start
+
+11:35:19.124 [10076]- PINPAD Mode 2:EMV/MSD Contactless. PinPad accepts Swipe, Insert and EMV/MSD Contactless.
+
+11:35:19.124 [10076]- Enter IsFormAgentXPI
+
+11:35:19.125 [10076]- Enter pp_InitPINPadInfo
+
+11:35:19.125 [10076]- TransInfo->TerminalID: 01352492
+
+11:35:19.126 [10076]- ReadPINPadInfo, return 1
+
+11:35:19.126 [10076]- pp_InitPINPadInfo succeed
+
+11:35:19.127 [10076]- pp_Display_String_XPI start
+
+11:35:19.127 [10076]-  Line1: 
+
+11:35:19.128 [10076]-  Line2: 
+
+TCP  IN :<NUL>'<STX>S14                <FS>                <ETX>I:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:35:19.430 [10076]- send_mess_recv_ack returns: 0
+
+11:35:19.430 [10076]- pp_Display_String_XPI return: 1
+
+11:35:19.430 [10076]- pp_Turn_On_Off_XPI start
+
+11:35:19.430 [10076]- pp_Turn_On_Off_XPI isSock: 1
+
+11:35:19.430 [10076]- Turn Off XPI
+
+TCP  IN :<NUL><BS><STX>XPI<FS>0<ETX>n:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:35:19.731 [10076]- send_mess_recv_ack returns: 0
+
+11:35:19.731 [10076]- pp Turn On Off XPI OK
+
+11:35:19.731 [10076]- pp_mx8xx_Display_Idle_Advert start
+
+11:35:19.732 [10076]- InitForm start
+
+TCP  IN :<NUL><ETB><STX>XIFM<FS>ADVERTISEMENT<FS>1<ETX>u:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:35:20.033 [10076]- send_mess_recv_ack returns: 0
+
+11:35:20.033 [10076]- mx8xx recv response starts
+
+TCP OUT :<NUL><HT>:
+
+TCP OUT :<STX>XIFM<FS>1<ETX>4:
+
+TCP  IN :<NUL><SOH><ACK>:
+
+11:35:20.134 [10076]- recv resp send ack returns: 9
+
+11:35:20.135 [10076]- InitForm recv return res : 9
+
+TCP  IN :<NUL>*<STX>XSPV<FS>2<FS>CAPTION<FS>STRING<FS>WELCOME / BONJOUR<>
+       <><ETX>S:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:35:20.436 [10076]- send_mess_recv_ack returns: 0
+
+11:35:20.436 [10076]- mx8xx recv response starts
+
+TCP OUT :<NUL><HT>:
+
+TCP OUT :<STX>XSPV<FS>1<ETX>#:
+
+TCP  IN :<NUL><SOH><ACK>:
+
+11:35:20.638 [10076]- recv resp send ack returns: 9
+
+11:35:20.639 [10076]- ShowForm start
+
+TCP  IN :<NUL><BEL><STX>XSFM<ETX><ETX>:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:35:20.939 [10076]- send_mess_recv_ack returns: 0
+
+11:35:20.940 [10076]- mx8xx recv response starts
+
+TCP OUT :<NUL><HT>:
+
+TCP OUT :<STX>XSFM<FS>1<ETX>.:
+
+TCP  IN :<NUL><SOH><ACK>:
+
+11:35:21.141 [10076]- recv resp send ack returns: 9
+
+11:35:21.142 [10076]- ShowForm recv return res : 9
+
+11:35:21.142 [10076]- pp_mx8xx_Display_Idle_Advert OK
+
+11:35:21.143 [10076]- Card Type selection cancelled by cardholder
+
+11:35:21.144 [10076]- cdca_m ... authorize_cd cardtype: 0
+
+11:35:21.144 [10076]- cdca_m ... authorize_cd ExpDAte: ****
+
+11:35:21.145 [10076]- cdca_m ... authorize_cd host id: 57
+
+struct ccauth_in_ex: 9724
+struct CDCAResult: 2200
+struct CCGiftResult: 14009
+TCDCAInput: 2200
+struct CDCATotalResult: 10420
+CCTAGtype: 9821
+Openning EMV config file: C:\MCM\MCM_4_2_12\out\01352492_emv.cfg
+Read EMV config file: 681
+INFO: [emv_get_terminal_country_code] Terminal Country code: 124
+11:35:23.150 [10076]- CCi->doSAF: 0
+
+CCi->authOffLine: 0
+CCi->automaticClearSAF: 0
+CCi->QSPenable: 1
+CCi->RFIDFloorLimitEnable: 0
+CCi->swipe_retry: 3
+CCi->GiftCards.AddParams.IPAddress: https://staging
+CCi->GiftCards.AddParams.IPAddress_2: 
+11:35:23.151 [10076]- Terminal Counntry Code: 124
+
+***** Card Type Settings Start *****
+ 1      MASTERCARD [ 1 -  1 -  1]
+ 1            VISA [ 0 -  2 -  1]
+ 1            AMEX [ 2 -  3 -  1]
+ 1        DISCOVER [ 5 -  4 -  1]
+ 0        INSIGNIA [ 6 -  0 -  0]
+ 1  ENROUTE/DINERS [ 3 -  6 -  1]
+ 1             JCB [ 7 -  7 -  1]
+ 0   PRIVATE LABEL [ 8 -  0 -  0]
+ 0                 [-1 -  0 -  0]
+ 0                 [-1 -  0 -  0]
+ 0      VISA DEBIT [ 9 -  0 -  0]
+ 1   INTERAC DEBIT [ 4 - 12 -  1]
+****** Card Type Settings End ******
+11:35:23.153 [10076]- FDMS (Verifone PINPad) 4.2.12.18604 - 01/12/2016
+
+11:35:23.153 [10076]- Datawire access type: 1
+
+Openning EMV config file: C:\MCM\MCM_4_2_12\out\01352492_emv.cfg
+Read EMV config file: 681
+11:35:23.154 [10076]- Terminal Currency Code: 124
+
+CCi->E_Commerce: 0
+CCi->E_CommerceNash: -1
+CCm_check_pp_socket: 1
+11:35:23.154 [10076]- CCm_check_pp_socket HOSTID -> : 57
+
+pinpad type: 2
+11:35:23.155 [10076]- pp_Initialize_Sequence_XPI start
+
+11:35:23.155 [10076]- Enter pp_InitPINPadInfo
+
+11:35:23.155 [10076]- TransInfo->TerminalID: 01352492
+
+11:35:23.155 [10076]- ReadPINPadInfo, return 1
+
+11:35:23.156 [10076]- pp_InitPINPadInfo succeed
+
+11:35:23.156 [10076]- pp_Initialize_Idle_Prompt_XPI start
+
+11:35:23.156 [10076]- PINPAD Mode 2:EMV/MSD Contactless. PinPad accepts Swipe, Insert and EMV/MSD Contactless.
+
+11:35:23.156 [10076]- Enter IsFormAgentXPI
+
+11:35:23.156 [10076]- Enter pp_InitPINPadInfo
+
+11:35:23.156 [10076]- TransInfo->TerminalID: 01352492
+
+11:35:23.157 [10076]- ReadPINPadInfo, return 1
+
+11:35:23.157 [10076]- pp_InitPINPadInfo succeed
+
+11:35:23.157 [10076]- pp_Display_String_XPI start
+
+11:35:23.157 [10076]-  Line1: 
+
+11:35:23.157 [10076]-  Line2: 
+
+TCP  IN :<NUL>'<STX>S14                <FS>                <ETX>I:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:35:23.458 [10076]- send_mess_recv_ack returns: 0
+
+11:35:23.459 [10076]- pp_Display_String_XPI return: 1
+
+11:35:23.460 [10076]- pp_Turn_On_Off_XPI start
+
+11:35:23.461 [10076]- pp_Turn_On_Off_XPI isSock: 1
+
+11:35:23.461 [10076]- Turn Off XPI
+
+TCP  IN :<NUL><BS><STX>XPI<FS>0<ETX>n:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:35:23.762 [10076]- send_mess_recv_ack returns: 0
+
+11:35:23.763 [10076]- pp Turn On Off XPI OK
+
+11:35:23.763 [10076]- pp_mx8xx_Display_Idle_Advert start
+
+11:35:23.764 [10076]- InitForm start
+
+TCP  IN :<NUL><ETB><STX>XIFM<FS>ADVERTISEMENT<FS>1<ETX>u:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:35:24.066 [10076]- send_mess_recv_ack returns: 0
+
+11:35:24.066 [10076]- mx8xx recv response starts
+
+TCP OUT :<NUL><HT>:
+
+TCP OUT :<STX>XIFM<FS>1<ETX>4:
+
+TCP  IN :<NUL><SOH><ACK>:
+
+11:35:24.269 [10076]- recv resp send ack returns: 9
+
+11:35:24.269 [10076]- InitForm recv return res : 9
+
+TCP  IN :<NUL>*<STX>XSPV<FS>2<FS>CAPTION<FS>STRING<FS>WELCOME / BONJOUR<>
+       <><ETX>S:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:35:24.572 [10076]- send_mess_recv_ack returns: 0
+
+11:35:24.572 [10076]- mx8xx recv response starts
+
+TCP OUT :<NUL><HT>:
+
+TCP OUT :<STX>XSPV<FS>1<ETX>#:
+
+TCP  IN :<NUL><SOH><ACK>:
+
+11:35:24.774 [10076]- recv resp send ack returns: 9
+
+11:35:24.775 [10076]- ShowForm start
+
+TCP  IN :<NUL><BEL><STX>XSFM<ETX><ETX>:
+
+TCP OUT :<NUL><SOH>:
+
+TCP OUT :<ACK>:
+
+11:35:25.077 [10076]- send_mess_recv_ack returns: 0
+
+11:35:25.077 [10076]- mx8xx recv response starts
+
+TCP OUT :<NUL><HT>:
+
+TCP OUT :<STX>XSFM<FS>1<ETX>.:
+
+TCP  IN :<NUL><SOH><ACK>:
+
+11:35:25.180 [10076]- recv resp send ack returns: 9
+
+11:35:25.180 [10076]- ShowForm recv return res : 9
+
+11:35:25.181 [10076]- pp_mx8xx_Display_Idle_Advert OK

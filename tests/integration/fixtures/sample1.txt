@@ -1,0 +1,209 @@
+09:55:20.696 [2828]- In CCm_CopyCCTAG CCi CCt->HostDriver: 40
+
+09:55:20.696 [2828]- In CCm_CopyCCTAG, before Paymentech_CopyCCTAG()
+
+09:55:20.707 [2828]- FDMS_Enable_PINPad CCi->isSock: 0
+
+09:55:20.707 [2828]- FDMS_Enable_PINPad HostID: 40
+
+09:55:20.707 [2828]- FDMS_Enable_PINPad PINPadType: 7
+
+09:55:20.970 [2828]- pp_Turn_On_Off_XPI start (isSock): 99
+
+09:55:20.970 [2828]- Enter IsFormAgentXPI
+
+09:55:20.970 [2828]- Enter pp_InitPINPadInfo
+
+09:55:20.970 [2828]- TransInfo->TerminalID: 118
+
+09:55:20.973 [2828]- ReadPINPadInfo, return 1
+
+09:55:20.973 [2828]- pp_InitPINPadInfo succeed
+
+09:55:20.973 [2828]- pp_Turn_On_Off_XPI isSock: 99
+
+09:55:20.973 [2828]- Turn On XPI
+
+09:55:21.048 [2828]- Enter sercomm_ol_outn
+
+09:55:21.677 [2828]- Enter sercomm_ol_outn
+
+09:55:21.678 - SER  IN :<STX>XPI<FS>1<ETX>o: 
+
+SER OUT :<ACK>:
+
+09:55:21.688 [2828]- send_mess_recv_ack returns: 0
+
+09:55:21.688 [2828]- pp Turn On Off XPI OK
+
+09:55:21.688 [2828]- pp_Initialize_Idle_Prompt_XPI start
+
+09:55:21.688 [2828]- PINPAD Mode 2:EMV/MSD Contactless. PinPad accepts Swipe, Insert and EMV/MSD Contactless.
+
+09:55:21.696 [2828]- getPINPadType_XPI result: 0
+
+SER  *** CLEARED ***
+
+09:55:21.771 [2828]- Enter sercomm_ol_outn
+
+09:55:21.771 - SER  IN :<STX>S01<ETX>Q:
+
+SER OUT :<ACK>:
+
+09:55:21.781 [2828]- send_mess_recv_ack returns: 0
+
+09:55:21.781 [2828]- pp_Initialize_Idle_Prompt_XPI OK
+
+09:55:21.781 [2828]- FDMS_Enabled_PINPad return: 0
+
+09:55:23.313 [5756]- In CCm_CopyCCTAG CCi CCt->HostDriver: 40
+
+09:55:23.313 [5756]- In CCm_CopyCCTAG, before Paymentech_CopyCCTAG()
+
+09:55:23.313 [5756]- In CCm_CopyCCTAG, after Paymentech_CopyCCTAG()
+
+09:55:23.325 [5756]- -- Activating E2EE --
+
+09:55:23.327 [5756]- Enter CCm_E2EE_GenerateNewKey for host: 40
+
+09:55:23.327 [5756]- CCi->automaticClearSAF: 2
+
+09:55:23.328 [5756]- Paymentech_Do_SAF_ex >>>
+
+09:55:23.340 [5756]- pp_Initialize_Idle_Prompt_XPI start
+
+09:55:23.340 [5756]- PINPAD Mode 2:EMV/MSD Contactless. PinPad accepts Swipe, Insert and EMV/MSD Contactless.
+
+09:55:23.340 [5756]- getPINPadType_XPI result: 0
+
+SER  *** CLEARED ***
+
+09:55:23.415 [5756]- Enter sercomm_ol_outn
+
+09:55:23.415 - SER  IN :<STX>S01<ETX>Q:
+
+SER OUT :<ACK>:
+
+09:55:23.425 [5756]- send_mess_recv_ack returns: 0
+
+09:55:23.425 [5756]- pp_Initialize_Idle_Prompt_XPI OK
+
+09:55:23.428 [5756]- pp_Initialize_Idle_Prompt_XPI start
+
+09:55:23.428 [5756]- PINPAD Mode 2:EMV/MSD Contactless. PinPad accepts Swipe, Insert and EMV/MSD Contactless.
+
+09:55:23.429 [5756]- getPINPadType_XPI result: 0
+
+SER  *** CLEARED ***
+
+09:55:23.504 [5756]- Enter sercomm_ol_outn
+
+09:55:23.504 - SER  IN :<STX>S01<ETX>Q:
+
+SER OUT :<ACK>:
+
+09:55:23.514 [5756]- send_mess_recv_ack returns: 0
+
+09:55:23.514 [5756]- pp_Initialize_Idle_Prompt_XPI OK
+
+09:55:23.514 [5756]- Clear SAF before Admin Transaction  automaticClearSAF : 2
+
+09:55:23.514 [5756]- b4 creditdetailrecordandsend CCo->OperatorID: 
+
+09:55:23.514 [5756]- createdetailrecordandsend 1  
+
+09:55:23.514 [5756]- Optdata: 
+
+09:55:23.538 [5756]- len of request reqlen : 181
+
+09:55:23.538 [5756]- maskPaymentechEncryptedPindebug -> len: 184
+
+TLS  IN :<STX>L.A0200082007000000064871181000001F500000000*****************<> <>***<FS>****IN                 <FS>00000000<FS><FS><FS><FS><FS><FS><> <><FS><FS><FS><FS>BT299<FS>RSI<FS>P10019005E00000000000288641966<FS>P2<> <>7AA00000000000000C40FD68100248<FS><ETX>(:
+
+09:55:23.539 [5756]- set_netConnect_config_linehandler -> read: C:\MerchantConnectMulti\\etc\linehandler.properties
+
+09:55:23.548 [5756]- set_netConnect_config_linehandler -> ncConfig.failoverTimer [Frome linehindle.properties] is: 1200
+
+09:55:23.548 [5756]- Paymentech_TLS_netConnect_HTTP: Set up the IP address and port for TLS connection by linehandler.properties.
+
+09:55:23.548 [5756]- Paymentech_TLS_netConnect_HTTP: Set up the IP address and port for TLS connection.
+
+09:55:23.548 [5756]- Paymentech_get_TLS_Connection_HTTP: backToPrimary is 0, will use Primary URL and port: netconnectkavar1.chasepaymentech.com
+
+09:55:23.613 [5756]- Paymentech_get_TLS_Connection_HTTP -> applied Primary URLs: netconnectkavar1.chasepaymentech.com
+
+09:55:23.613 [5756]- Enter doSSLConnect_ex
+
+09:55:23.613 [5756]- Call SSL_connect_tr_ex timeout: 30
+
+09:55:23.613 [5756]- Enter SSL_connect_tr_ex
+
+09:55:24.413 [5756]- WSAStartup already called
+
+09:55:54.415 [5756]- connect failed timeout: 30
+
+09:55:54.415 [5756]- tcp_connect_(timeout)_ex Failed
+
+09:55:54.415 [5756]- [0] SSL_connect_tr_ex Message: connect failed timeout: 30
+
+09:55:54.415 [5756]- doSSLConnect_ex: 0
+
+09:55:54.415 [5756]- Paymentech_get_TLS_Connection_HTTP: [doSSLConnect_ex] returns: 0
+
+09:55:54.415 [5756]- Enter doSSLConnect_ex
+
+09:55:54.415 [5756]- Call SSL_connect_tr_ex timeout: 30
+
+09:55:54.415 [5756]- Enter SSL_connect_tr_ex
+
+09:55:54.415 [5756]- WSAStartup already called
+
+09:55:54.415 [5756]- connect failed: 10049
+
+09:55:54.415 [5756]- tcp_connect_(timeout)_ex Failed
+
+09:55:54.415 [5756]- [0] SSL_connect_tr_ex Message: connect failed: 10049
+
+09:55:54.415 [5756]- doSSLConnect_ex: 0
+
+09:55:54.415 [5756]- Paymentech_get_TLS_Connection_HTTP: [doSSLConnect_ex] returns: 0
+
+09:55:54.415 [5756]- ERROR: [Paymentech_get_TLS_Connection_HTTP] SSL Connect error: connect failed: 10049
+
+09:55:54.415 [5756]- Paymentech_get_TLS_Connection_HTTP: FAILED. CAN NOT reach the host over TLS protocol
+
+09:55:54.416 [5756]- Paymentech_get_TRS_Totals CCo->SumCount > 0 : 0
+
+09:55:54.416 [5756]- Paymentech_get_TRS_Totals CCo->SumAmount > 0 : 0
+
+09:55:54.416 [5756]- b4 creditdetailrecordandsend res : 0
+
+09:55:54.416 [5756]- Paymentech_Get_Totals exit: 0
+
+09:55:54.416 [5756]- Communication error detected prior to rotating keys. Key rotation not attempted.
+
+09:55:54.485 [5756]- In CCm_CopyCCTAG CCi CCt->HostDriver: 40
+
+09:55:54.485 [5756]- In CCm_CopyCCTAG, before Paymentech_CopyCCTAG()
+
+09:55:54.485 [5756]- In CCm_CopyCCTAG, after Paymentech_CopyCCTAG()
+
+09:55:54.485 [5756]- CCm_check_pp_socket HOSTID -> : 40
+
+09:55:54.486 [5756]- pp_Initialize_Idle_Prompt_XPI start
+
+09:55:54.486 [5756]- PINPAD Mode 2:EMV/MSD Contactless. PinPad accepts Swipe, Insert and EMV/MSD Contactless.
+
+09:55:54.487 [5756]- getPINPadType_XPI result: 0
+
+SER  *** CLEARED ***
+
+09:55:54.562 [5756]- Enter sercomm_ol_outn
+
+09:55:54.562 - SER  IN :<STX>S01<ETX>Q:
+
+SER OUT :<ACK>:
+
+09:55:54.577 [5756]- send_mess_recv_ack returns: 0
+
+09:55:54.577 [5756]- pp_Initialize_Idle_Prompt_XPI OK
