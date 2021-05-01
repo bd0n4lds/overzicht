@@ -28,7 +28,7 @@ def _parse_line(line):
     # if there are no matches
     return None
 
-def parseData(log_file_path, export_file, regex, read_line=True, reparse=False):
+def _parse_data(log_file_path, export_file, regex, read_line=True, reparse=False):
     """
     Parse text at given filepath
 
@@ -53,25 +53,31 @@ def parseData(log_file_path, export_file, regex, read_line=True, reparse=False):
                 match_list.append(match_text)
     file.close()
 
-    if reparse == True:
-        match_list = reparseData(match_list, '(property name="(.{1,50})">(Enabled)<\/property>)')
+    # if reparse == True:
+     # match_list = reparseData(match_list, '(property name="(.{1,50})">(Enabled)<\/property>)')
         
 def run():
-    parser = argparse.ArgumentParser(
-        description='Overzicht execution with CLI options')
-    parser.add_argument('-v', '--version', action='store_true',
-                        default=False, version='%(prog)s 1.0', help='Version Informaton')
-    parser.add_argument("-d", "--debug", dest='debug',
-                        action='store_true', help="Run with log level set to debug.")
+    parser = argparse.ArgumentParser(description="Overzicht execution with CLI options")
+    
+    parser.add_argument("--version", action="version", version='%(prog)s 1.0', help="Version Informaton")
+    
+    parser.add_argument("-d", "--debug", dest='debug', action='store_true', help="Run with log level set to debug.")
+    
     parser.add_argument("-f", "--file", help="Mulit or Dg Log File to Overview.")
-    parser.add_argument('-p', '--pinpad', action="store_true",
-                        help="Provide PINpad Model")
+    
+    parser.add_argument('-p', '--pinpad', action="store_true", help="Provide PINpad Model")
 
     args = parser.parse_args()
 
     # Set logging level
     level = logging.DEBUG if args.debug else logging.INFO
 
+    # Print help
+    if not args.debug or args.version:
+        import sys
+        parser.print_help()
+        sys.exit(0)
+        
     # Print version
     if args.version:
         import sys
