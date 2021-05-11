@@ -61,11 +61,11 @@ def run():
     
     parser.add_argument("--version", action="version", version='%(prog)s 1.0', help="Version Informaton")
     
-    parser.add_argument("-d", "--debug", dest='debug', action='store_true', help="Run with log level set to debug.")
+    parser.add_argument("--debug", dest="debug", help="Run with log level set to debug.")
     
-    parser.add_argument("-f", "--file", help="Mulit or Dg Log File to Overview.")
+    parser.add_argument("--file", help="Mulit or Dg Log File to Overview.")
     
-    parser.add_argument('-p', '--pinpad', action="store_true", help="Provide PINpad Model")
+    parser.add_argument("--pinpad", help="Provide PINpad Model")
 
     args = parser.parse_args()
 
